@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani&display=swap');
+* {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+img {
+    padding: 22px;
+    height: 320px;
+}
+
+h1, .attribution {
+    text-align: center;
+    padding: 22px;
+    color: #7FB77E;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%,
+     rgba(140,190,86,1) 0%, rgba(103,223,255,1) 100%, rgba(0,255,147,1) 100%);
+    font-family: 'Biryani', sans-serif; 
+}
+
+.header {
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+    padding: 25px;
+    color: white;
+    font-size: 45px;
+    font-weight: 650;
+    text-align: center;
+}
+
+.select {
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 18px;  
+}
+
+.rock, .paper, .scissors {
+    background-color: #F7F6DC;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.score-container {
+    margin: 45px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score {
+    padding: 24px;
+    background-color: #B1D7B4;
+}
