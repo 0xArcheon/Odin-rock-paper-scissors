@@ -58,7 +58,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function getUserInput() {
-    let userInput = (prompt("Select Rock, Paper or Scissors")).toString();
+    // let userInput = (prompt("Select Rock, Paper or Scissors")).toString();
     userInput = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase();
     return userInput;
 }
