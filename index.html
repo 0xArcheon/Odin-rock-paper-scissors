@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -34,19 +33,33 @@
             <h1 class="msg">You Won/Lost</h1>
             <h1 class="sub-msg">CPU chose X</h1>
             <button class="play-again">Play Again</button>
+            <span class="close">X</span>
         </div>
     </div>
     <div class="score-container">
         <div class="scoreboard">
-            <h2 class="score">You : 0</h2>
-            <h2 class="score">CPU : 0</h2>
+            <table class="score">
+                <tr>
+                    <th>Player</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>CPU</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>User</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            
         </div>
     </div>
     <div class="attribution">
         <a href="https://www.flaticon.com/free-icons/sign-language" title="sign language icons">Sign language icons
             created by Freepik - Flaticon</a>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

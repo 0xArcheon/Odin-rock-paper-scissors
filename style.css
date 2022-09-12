@@ -19,9 +19,7 @@ h1, .attribution {
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%,
-     rgba(140,190,86,1) 0%, rgba(103,223,255,1) 100%, rgba(0,255,147,1) 100%);
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     font-family: 'Biryani', sans-serif; 
 }
 
@@ -58,11 +56,12 @@ body {
 }
 
 .rock, .paper, .scissors {
-    background: rgba(255, 255, 255, 0.41);
+/* From https://css.glass */
+    background: rgba(255, 255, 255, 0.18);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.1px);
-    -webkit-backdrop-filter: blur(12.1px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -76,7 +75,14 @@ body {
 }
 .score {
     padding: 24px;
-    background-color: #B1D7B4;
+    background-color: #CDF0EA;
+    margin: 15px ;
+}
+
+table, th, td {
+    padding: 20px 40px;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 .modal-bg {
@@ -94,6 +100,7 @@ body {
 } 
 
 .modal {
+    position: relative;
     height: 50%;
     width: 50%;
     background-color: white;
@@ -113,6 +120,13 @@ body {
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
 .active {
     visibility: visible;
     opacity: 1;

@@ -1,3 +1,20 @@
+let rockBtn = document.querySelector(".rock");
+let paperBtn = document.querySelector(".paper");
+let ScissorsBtn = document.querySelector(".scissors");
+let option = document.querySelectorAll(".option");
+let modalbg = document.querySelector(".modal-bg");
+let close = document.querySelector(".close");
+
+close.addEventListener("click", function(){
+    modalbg.classList.remove("active");
+});
+for(btn of option)
+{
+    btn.addEventListener("click", function (){
+        modalbg.classList.add("active");
+    });
+}
+
 let userScore = 0;
 let computerScore = 0;
 game();
