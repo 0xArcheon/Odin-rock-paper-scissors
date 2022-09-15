@@ -4,28 +4,29 @@ let ScissorsBtn = document.querySelector(".scissors");
 let option = document.querySelectorAll(".option");
 let modalbg = document.querySelector(".modal-bg");
 let close = document.querySelector(".close");
+let userInput;
 
 close.addEventListener("click", function(){
     modalbg.classList.remove("active");
 });
-for(btn of option)
-{
+option.forEach((btn)=>{
     btn.addEventListener("click", function (){
         modalbg.classList.add("active");
+        userInput = btn.id;
+        userInput = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase();
+        game();
     });
-}
-
+});
 let userScore = 0;
 let computerScore = 0;
-game();
+
 function game() {
-    for(let i = 0; i<5 ; i++)
-    {
-        let playerSelection = getUserInput();
+    
+        let playerSelection = userInput;
         let computerSelection = computerPlay();
         console.log(playRound(playerSelection,computerSelection));
         console.log("You: "+userScore+ "\nComputer: "+computerScore);
-    }
+    
     if(userScore > computerScore) {
         console.log("CONGRATS! You win the game");
     }
@@ -74,11 +75,11 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function getUserInput() {
-    // let userInput = (prompt("Select Rock, Paper or Scissors")).toString();
+/* function getUserInput() {
+    let userInput = (prompt("Select Rock, Paper or Scissors")).toString();
     userInput = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase();
     return userInput;
-}
+} */
 
 function computerPlay() {
     let comInput = ["Rock", "Paper", "Scissors"];
