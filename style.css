@@ -112,6 +112,7 @@ table, th, td {
 }
 
 .play-again {
+    margin: 22px;
     color: white;
     font-size: 40px;
     padding: 18px 36px;
@@ -130,4 +131,8 @@ table, th, td {
 .active {
     visibility: visible;
     opacity: 1;
+}
+.msg {
+    font-size: 45px;
+    font-weight: 700;
 }
